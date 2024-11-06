@@ -290,7 +290,7 @@ exclude-too-few-public-methods=
 ignored-parents=
 
 # Maximum number of arguments for function / method.
-max-args=5
+# max-args=5
 
 # Maximum number of attributes for a class (see R0902).
 max-attributes=7
@@ -317,7 +317,7 @@ max-public-methods=20
 max-returns=6
 
 # Maximum number of statements in function / method body.
-max-statements=50
+# max-statements=50
 
 # Minimum number of public methods for a class (see R0903).
 min-public-methods=2
@@ -352,7 +352,7 @@ indent-after-paren=4
 indent-string='    '
 
 # Maximum number of characters on a single line.
-max-line-length=100
+#max-line-length=100
 
 # Maximum number of lines in a module.
 max-module-lines=1000
@@ -479,7 +479,7 @@ notes-rgx=
 [REFACTORING]
 
 # Maximum number of nested blocks for function / method body
-max-nested-blocks=5
+#max-nested-blocks=5
 
 # Complete name of functions that never returns. When checking for
 # inconsistent-return-statements if a never returning function is called then
