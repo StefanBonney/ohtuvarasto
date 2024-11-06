@@ -1,8 +1,5 @@
-"""Module for handling inventory""" 
-
 
 class Varasto:
-    """Inventory Management System""" 
     def __init__(self, tilavuus, alku_saldo = 0):
         if tilavuus > 0.0:
             self.tilavuus = tilavuus
@@ -22,11 +19,9 @@ class Varasto:
 
     # huom: ominaisuus voidaan myös laskea.
     def paljonko_mahtuu(self):
-        """how much fits"""
         return self.tilavuus - self.saldo
 
     def lisaa_varastoon(self, maara):
-        """adds item"""
         if maara < 0:
             return
         if maara <= self.paljonko_mahtuu():
@@ -35,7 +30,6 @@ class Varasto:
             self.saldo = self.tilavuus
 
     def ota_varastosta(self, maara):
-        """takes item"""
         if maara < 0:
             return 0.0
         if maara > self.saldo:

@@ -1,9 +1,6 @@
-"""main"""
-
 from varasto import Varasto
 
 def print_initial_state(mehua, olutta):
-    """initial"""
     print(
         "Luonnin jälkeen:\n"
         f"Mehuvarasto: {mehua}\n"
@@ -11,7 +8,6 @@ def print_initial_state(mehua, olutta):
     )
 
 def print_olut_getter_values(olutta):
-    """getter"""
     print(
         "Olut getterit:\n"
         f"saldo = {olutta.saldo}\n"
@@ -20,7 +16,6 @@ def print_olut_getter_values(olutta):
     )
 
 def perform_mehu_operations(mehua):
-    """operations"""
     print(
         "Mehu setterit:\n"
         "Lisätään 50.7\n"
@@ -34,7 +29,6 @@ def perform_mehu_operations(mehua):
     mehua.ota_varastosta(3.14)
 
 def handle_errors():
-    """errors"""
     print(
         "Virhetilanteita:\n"
         "Varasto(-100.0);\n"
@@ -44,14 +38,12 @@ def handle_errors():
     )
 
 def perform_olut_operations(olutta):
-    """operations"""
     print(f"Olutvarasto: {olutta}\n")
     print("olutta.lisaa_varastoon(1000.0)\n")
     olutta.lisaa_varastoon(1000.0)
     print(f"Olutvarasto: {olutta}\n")
 
 def perform_mehu_negative_operations(mehua):
-    """negative"""
     print(
         f"Mehuvarasto: {mehua}\n"
         "mehua.lisaa_varastoon(-666.0)\n"
@@ -60,7 +52,6 @@ def perform_mehu_negative_operations(mehua):
     print(f"Mehuvarasto: {mehua}\n")
 
 def perform_getter_operations(olutta, mehua):
-    """getter"""
     print(f"Olutvarasto: {olutta}\n")
     print("olutta.ota_varastosta(1000.0)\n")
     saatiin = olutta.ota_varastosta(1000.0)
@@ -74,7 +65,6 @@ def perform_getter_operations(olutta, mehua):
     print(f"Mehuvarasto: {mehua}\n")
 
 def main():
-    """Main Function"""
     mehua = Varasto(100.0)
     olutta = Varasto(100.0, 20.2)
 
